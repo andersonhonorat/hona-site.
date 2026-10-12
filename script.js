@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const revealSelectors = [
+    ".areas-intro", ".area-tile", ".extra-image", ".extra-copy",
     ".category-intro", ".category-buttons a",
     ".section-heading", ".service-card", ".account-management-card",
     ".plans-heading", ".plan-card",
@@ -79,3 +80,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
