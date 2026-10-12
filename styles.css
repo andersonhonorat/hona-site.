@@ -209,7 +209,11 @@ a:hover .arrow-down, a:focus-visible .arrow-down { transform: translateY(2px); }
   inset: 0;
   animation: platform-orbit-spin 26s linear infinite;
 }
-.platform-traveler-shopee { animation-delay: -13s; }
+.platform-traveler-shopee { animation-delay: -4.333s; }
+.platform-traveler-shopee-express { animation-delay: -8.667s; }
+.platform-traveler-jt { animation-delay: -13s; }
+.platform-traveler-correios { animation-delay: -17.333s; }
+.platform-traveler-jadlog { animation-delay: -21.667s; }
 .orbit-platform-badge {
   position: absolute;
   top: -30px;
@@ -227,9 +231,15 @@ a:hover .arrow-down, a:focus-visible .arrow-down { transform: translateY(2px); }
   backdrop-filter: blur(12px);
   animation: platform-orbit-counter-spin 26s linear infinite;
 }
-.platform-traveler-shopee .orbit-platform-badge { animation-delay: -13s; }
+.platform-traveler-shopee .orbit-platform-badge { animation-delay: -4.333s; }
+.platform-traveler-shopee-express .orbit-platform-badge { animation-delay: -8.667s; }
+.platform-traveler-jt .orbit-platform-badge { animation-delay: -13s; }
+.platform-traveler-correios .orbit-platform-badge { animation-delay: -17.333s; }
+.platform-traveler-jadlog .orbit-platform-badge { animation-delay: -21.667s; }
 .orbit-platform-badge .marketplace-tiktok img { height: 31px; }
 .orbit-platform-badge .marketplace-shopee img { height: 34px; }
+.carrier-logo { display: inline-flex; align-items: center; }
+.carrier-logo img { display: block; height: 24px; width: auto; object-fit: contain; }
 @keyframes platform-orbit-spin { to { transform: rotate(360deg); } }
 @keyframes platform-orbit-counter-spin { to { transform: translateX(-50%) rotate(-360deg); } }
 .hero-monogram {
@@ -256,6 +266,43 @@ a:hover .arrow-down, a:focus-visible .arrow-down { transform: translateY(2px); }
 .hero-strip > div:last-child { border-right: 0; }
 .hero-strip strong { color: var(--gold-deep); font-family: Georgia, serif; font-size: 34px; font-weight: 400; }
 .hero-strip span { color: #514b43; font-size: 9px; line-height: 1.45; letter-spacing: .08em; text-transform: uppercase; }
+
+.areas-hona { padding: 64px clamp(24px, 6vw, 94px) 70px; background: var(--paper); border-top: 1px solid rgba(6,6,6,.08); }
+.areas-intro { max-width: 1280px; margin: 0 auto 34px; }
+.areas-intro h2 { max-width: 640px; margin: 14px 0 0; font-size: clamp(26px, 2.8vw, 40px); line-height: 1.08; letter-spacing: -.045em; }
+.areas-grid { max-width: 1280px; margin: auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.area-tile { position: relative; min-height: 236px; padding: 28px 24px; display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 22px; background: var(--ivory); transition: transform .2s ease, border-color .2s ease, background .2s ease; }
+.area-tile:hover, .area-tile:focus-visible { transform: translateY(-4px); border-color: rgba(223,164,79,.65); background: var(--sand); }
+.area-icon { width: 44px; height: 44px; display: grid; place-items: center; margin-bottom: 20px; color: var(--gold-deep); }
+.area-icon svg { width: 44px; height: 44px; }
+.area-icon path, .area-icon rect { stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.area-tile strong { font-size: 19px; line-height: 1.15; letter-spacing: -.02em; }
+.area-desc { margin: 10px 0 auto; color: var(--muted); font-size: 11.5px; line-height: 1.55; }
+.area-tile .arrow-icon { align-self: flex-end; margin-top: 18px; width: 27px; height: 27px; color: var(--gold-deep); }
+
+.extra-section { padding: 90px clamp(24px, 6vw, 94px); background: var(--ivory); }
+.extra-section.extra-alt { background: var(--paper); }
+.extra-section.extra-dark { color: #fff; background: var(--black); }
+.extra-grid { max-width: 1280px; margin: auto; display: grid; grid-template-columns: .95fr 1.05fr; gap: clamp(36px, 5vw, 64px); align-items: center; }
+.extra-grid-reverse { grid-template-columns: 1.05fr .95fr; }
+.extra-grid-reverse .extra-copy { order: 1; }
+.extra-grid-reverse .extra-image { order: 2; }
+.extra-image img { display: block; width: 100%; border-radius: 22px; box-shadow: 0 24px 60px rgba(20,14,4,.18); }
+.extra-copy .section-number { margin-bottom: 20px; }
+.extra-copy h2 { margin: 0 0 20px; font-size: clamp(32px, 3.6vw, 50px); line-height: 1.04; letter-spacing: -.05em; }
+.extra-dark h2 em { color: var(--gold-light); }
+.extra-copy > p { max-width: 520px; margin: 0 0 26px; font-size: 13.5px; line-height: 1.78; color: var(--muted); }
+.extra-dark .extra-copy > p { color: rgba(255,255,255,.72); }
+.extra-note { display: flex; align-items: flex-start; gap: 12px; margin: 0 0 26px; padding: 16px 18px; border: 1px solid rgba(223,164,79,.35); border-radius: 14px; background: rgba(223,164,79,.08); }
+.extra-note span { width: 22px; height: 22px; flex: 0 0 auto; display: grid; place-items: center; border-radius: 50%; background: var(--gold); color: var(--black); font-size: 11px; font-weight: 800; }
+.extra-note p { margin: 0; font-size: 11.5px; line-height: 1.55; color: var(--muted); }
+.extra-info { margin: 0 0 30px; padding: 22px 0 0; display: grid; gap: 14px; border-top: 1px solid var(--line); list-style: none; }
+.extra-dark .extra-info { border-color: var(--dark-line); }
+.extra-info li { display: grid; grid-template-columns: 90px 1fr; gap: 14px; font-size: 12px; line-height: 1.6; }
+.extra-info strong { color: var(--gold-deep); font-family: var(--font-geist-mono), monospace; font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
+.extra-dark .extra-info strong { color: var(--gold-light); }
+.extra-info span { color: var(--muted); }
+.extra-dark .extra-info span { color: rgba(255,255,255,.72); }
 
 .category-nav { padding: 42px clamp(24px, 6vw, 94px) 48px; background: var(--sand); border-top: 1px solid rgba(6,6,6,.08); border-bottom: 1px solid rgba(6,6,6,.1); }
 .category-intro { max-width: 1280px; margin: 0 auto 22px; display: flex; align-items: flex-end; justify-content: space-between; gap: 30px; }
@@ -551,12 +598,21 @@ footer > a:last-child { padding-bottom: 4px; border-bottom: 1px solid rgba(255,2
   .orbit-platform-badge { top: -26px; min-width: 126px; min-height: 52px; padding: 12px 17px; }
   .orbit-platform-badge .marketplace-tiktok img { height: 26px; }
   .orbit-platform-badge .marketplace-shopee img { height: 29px; }
+  .orbit-platform-badge .carrier-logo img { height: 20px; }
   .hero-monogram { width: min(350px, 78%); }
   .hero-strip { left: 20px; right: 20px; min-height: 104px; }
   .hero-strip > div { gap: 8px; padding: 20px 7px; }
   .hero-strip > div + div { padding-left: 12px; }
   .hero-strip strong { font-size: 25px; }
   .hero-strip span { font-size: 7px; }
+  .areas-hona { padding: 48px 20px 54px; }
+  .areas-intro { margin-bottom: 22px; }
+  .areas-grid { grid-template-columns: 1fr 1fr; }
+  .area-tile { min-height: 200px; padding: 24px 20px; }
+  .extra-section { padding: 64px 20px 70px; }
+  .extra-grid, .extra-grid-reverse { grid-template-columns: 1fr; }
+  .extra-grid-reverse .extra-copy, .extra-grid-reverse .extra-image { order: initial; }
+  .extra-copy h2 { font-size: 38px; }
   .category-nav { padding: 35px 20px 39px; }
   .category-intro { margin-bottom: 18px; align-items: flex-start; flex-direction: column; gap: 9px; }
   .category-intro h2 { font-size: 28px; }
@@ -602,10 +658,12 @@ footer > a:last-child { padding-bottom: 4px; border-bottom: 1px solid rgba(255,2
   .orbit-platform-badge { top: -23px; min-width: 108px; min-height: 46px; padding: 10px 14px; }
   .orbit-platform-badge .marketplace-tiktok img { height: 22px; }
   .orbit-platform-badge .marketplace-shopee img { height: 24px; }
+  .orbit-platform-badge .carrier-logo img { height: 17px; }
   .hero-strip strong { font-size: 22px; }
   .hero-strip span { letter-spacing: .03em; }
   .category-buttons { grid-template-columns: 1fr; }
   .category-buttons a { min-height: 76px; }
+  .areas-grid { grid-template-columns: 1fr; }
   .section-heading h2, .plans-heading h2, .method-intro h2, .about-copy h2, .faq-heading h2 { font-size: 41px; }
   .service-card h3 { font-size: 41px; }
   .platform-choice { gap: 6px; }
@@ -636,3 +694,4 @@ footer > a:last-child { padding-bottom: 4px; border-bottom: 1px solid rgba(255,2
   .platform-traveler-tiktok .orbit-platform-badge { transform: translateX(-50%) rotate(-42deg); }
   .platform-traveler-shopee .orbit-platform-badge { transform: translateX(-50%) rotate(-222deg); }
 }
+
