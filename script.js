@@ -2,8 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const revealSelectors = [
     ".areas-intro", ".area-tile", ".extra-image", ".extra-copy",
     ".category-intro", ".category-buttons a",
-    ".section-heading", ".service-card", ".account-management-card",
-    ".plans-heading", ".plan-card",
+    ".section-heading", ".service-card", ".account-management-card", ".fulfillment-combo-card",
     ".method-intro", ".method-flow article",
     ".about-art", ".about-copy",
     ".faq-heading", ".faq-list details",
@@ -80,4 +79,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-
